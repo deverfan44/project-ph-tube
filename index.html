@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <!-- Google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+    <!-- Daisui and Tailwind cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+            }
+    </script>
+</head>
+<body class="font-inter">
+    <section class="max-w-screen-xl mx-auto px-5 xl::px-0">
+        <header class="py-5 border-b border-gray-300">
+            <!-- <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                            </div>
+                            <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                            <li><a>Item 3</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-ghost text-xl">daisyUI</a>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                    <li><a>Item 3</a></li>
+                </ul>
+                </div>
+
+                <div class="navbar-end">
+                    <a class="btn">Button</a>
+                </div>
+            </div> -->
+            <nav class="flex justify-between">
+                <!-- logo  -->
+                <div id="main-logo">
+                    <a href="#"><img src="./image/Logo.png" alt=""></a>
+                </div>
+                <!-- sort  -->
+                <div>
+                    <button class="btn text-xl">Sort by view</button>
+                </div>
+                <!-- blog  -->
+                <div>
+                    <button class="btn bg-[#FF1F3D] text-xl text-white">Blog</button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- catagory btn -->
+        <div id="catagoryBtn" class="catagory-btn-container flex justify-center py-4">
+            <button class="px-4 py-1 bg-gray-200 text-gray-600 mx-2 cursor-pointer">All</button>
+            <!-- <button class="px-4 py-1 bg-gray-200 text-gray-600 mx-2 cursor-pointer">Music</button>
+            <button class="px-4 py-1 bg-gray-200 text-gray-600 mx-2 cursor-pointer">Comedy</button>
+            <button class="px-4 py-1 bg-gray-200 text-gray-600 mx-2 cursor-pointer">Draing</button> -->
+        </div>
+    </section>
+
+    <!-- Daisui and Tailwind cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- js file  -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

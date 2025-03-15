@@ -27,6 +27,13 @@
             }
             }
     </script>
+
+    <style>
+        .active{
+            background-color: red;
+            color: white;
+        }
+    </style>
 </head>
 <body class="font-inter">
     <section class="max-w-screen-xl mx-auto px-5 xl::px-0">
@@ -67,7 +74,10 @@
                 </div>
                 <!-- sort  -->
                 <div>
-                    <button class="btn text-xl">Sort by view</button>
+                    <label class="input">
+                        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></g></svg>
+                        <input type="search" id="searchInput" required placeholder="Search"/>
+                    </label>
                 </div>
                 <!-- blog  -->
                 <div>
@@ -78,17 +88,71 @@
 
         <!-- catagory btn -->
         <div id="catagoryBtn" class="catagory-btn-container flex justify-center py-4">
-            <button class="px-4 py-1 bg-gray-200 text-gray-600 mx-2 cursor-pointer">All</button>
+            <button class="px-4 py-1 bg-gray-200 text-gray-600 mx-2 cursor-pointer " id="allBtn">All</button>
             <!-- <button class="px-4 py-1 bg-gray-200 text-gray-600 mx-2 cursor-pointer">Music</button>
             <button class="px-4 py-1 bg-gray-200 text-gray-600 mx-2 cursor-pointer">Comedy</button>
             <button class="px-4 py-1 bg-gray-200 text-gray-600 mx-2 cursor-pointer">Draing</button> -->
         </div>
     </section>
+    <main>
+        <section class="max-w-screen-xl mx-auto px-5 xl::px-0">
+            <div id="videosContainer" class="videos-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-5">
+                <!-- video card  -->
+                <!-- <div>
+                    <div class="relative rounded-lg">
+                        <img src="./image/tumbnail.png" class="w-full" alt="">
+                        <span class="absolute right-2 bottom-2 text-white bg-[#171717] px-2 py-1 text-xs rounded-sm">3hour 53min ago</span>
+                    </div>
+                    <div class="flex px-1 py-3">
+                        <div class="basis-[30%]">
+                            <div class="avatar text-center">
+                                <div class="w-[70%] rounded-full">
+                                    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grow space-y-1">
+                            <h3 class="text-[16px] font-semibold">Building a Winning UX Strategy Using the Kano Model</h3>
+                            <p class="text-[14px] text-gray-600">Awlad Hossain</p>
+                            <p class="text-[14px] text-gray-600">91k Views</p>
+                        </div>
+                    </div>
+                </div> -->
 
+                <!-- <div class="col-span-full text-center">
+                    <div>
+                        <img src="./image/Icon.png" class="mx-auto" alt="">
+                        <h2 class="text-2xl">Opps! Here no Collection</h2>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="video_details.showModal()">open modal</button> -->
+
+    <dialog id="video_details" class="modal">
+    <div class="modal-box">
+        <div id="detailsContainer">
+            <!-- <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Press ESC key or click the button below to close</p> -->
+        </div>
+        <div class="modal-action">
+        <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+        </form>
+        </div>
+    </div>
+    </dialog>
     <!-- Daisui and Tailwind cdn  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- js file  -->
     <script src="./js/index.js"></script>
+    <script src="./js/categoriesTarget.js"></script>
 </body>
 </html>
